@@ -1,0 +1,147 @@
+<script>
+
+//var
+    var clima = "Quente"
+    clima = "Frio"
+    console.log(clima)
+
+//let
+    let tempo = "Quente"
+    tempo = "Frio"
+    console.log(tempo)
+
+//const
+    const temperatura = "Quente"
+//temperatura = "frio" //não é possivel reatribuir o valor 
+    console.log(temperatura)
+
+
+
+//JS é fracamente tipada, o tipo será definido ao atribuir um valor à variável
+
+    let variavel = ""
+    console.log(typeof variavel) ///typeof para descobrir qual o tipo de dado.
+
+    let variavle2 = 5
+    console.log (typeof variavle2)
+
+    let variavel3 = true
+    console.log(typeof variavel3)
+
+    let variavel4 = false //era boolean
+    variavel4 = "" //virou string
+    console.log(typeof variavel4)
+
+
+
+// vamos iniciar um bloco
+{
+    //aqui dentro é um bloco e posso colocar qualquer código
+    let x = 0
+    console.log(x)
+} //aqui fechamos o bloco
+
+
+
+//VAR
+
+//var é global e também local
+console.log('> existe x antes do bloco?', x)
+{
+    var x = 1 //escopo local fica dentro das chaves
+}
+console.log('> existe x depois do bloco?', x)
+
+//HOISTINg: quando colocamos a variável dentro de um scopo local, como no exmplo acima, é como se fizessemos da seguinte manteira:
+var y
+console.log('> existe y antes do bloco?', y)
+{
+     y = 1 
+}
+
+//nesse caso a várivel z não está definida.
+//console.log('> existe z antes do bloco?', z) ===>>> deixar comentado pois o código para quando encontra erro.
+
+//correto:
+var w = 5
+console.log('> existe w?', w)
+
+
+
+//LET
+
+//const e let são locais e só funcionam no escopo onde foi criada
+//console.log('> existe t antes do bloco?', t)
+{
+    let t = 3
+}
+//console.log('> existe t depois do bloco?', t) ===>>>> esse também não funciona pois não foi definido
+
+//não faz HOISTING, por isso dará erro ao declarar variável depois:
+{
+    //console.log('> existe t antes do bloco?', t) ===>>> deixar comentado pois o código para quando encontra erro.
+    let t = 8
+}
+
+//correto:
+{
+    let t = 9
+    console.log('> existe t', t)
+}
+
+//variavél delcarada fora e dentro do escopo também funciona
+let c = 0
+{
+    let c = 10
+    console.log('> existe c', c)
+}
+console.log('> existe c depois do bloco?', c)
+
+//caso a variavel seja redeclarada dentro do bloco, então dentro e fora do bloco serão reatribuidos, independente de quantos escopos tem antes.
+let g = 6
+{
+     g = 12
+    console.log('> existe g', g)
+}
+console.log('> existe g depois do bloco?', g)
+
+
+
+//CONST
+
+//apesar de const não poder ser reatribuida ou redeclarada, quando esta dentro do escopo é considerado outra variavél.
+const h = 3
+{
+    const h = 33
+    console.log('> existe h?', h)
+}
+console.log('> existe h depois do bloco?', h)
+
+
+/*
+# NOMEANDO VARIÁVEIS
+
+## Para criar nomes
+
+* js é case-sentive (sensível ao caso)
+* js aceita a cadeia de caractéres Unicode
+
+- Posso:
+    * Iniciar com esses caracteres especiais: $ _
+    * Iniciar com letras
+    * Colocar acentos
+    * Letras maíusculas e minúsculas fazem diferença
+
+- Não posso:
+    * Iniciar com números
+    * Colocar espaços vazios no nome
+
+- Ideal:
+    * Criar nomes que fazem sentido
+    * Que explique o que a variável faz ou é
+    * camelCase
+    * snake_case
+    * Escrever em inglês
+*/
+
+</script>

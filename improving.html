@@ -1,0 +1,86 @@
+<script>
+
+//variveis e tipos de daso
+    var name  //declaration
+
+    name = "Cris" //assignment
+
+    console.log(typeof name) //para ver o tipo de dado
+
+    let age = 20 //number
+    let isHuman = true //boolean
+
+    console.log(age, isHuman) //multiplos argumentos na função, usar virgulas
+
+
+//agrupamento de declarações:
+    let age1, isHuman1
+    
+    age1 = 36
+    isHuman1 = true
+
+    console.log(age1, isHuman1)
+
+
+//escrita de texto + variáveis
+
+    //concatenando os valores
+   // console.log('A ' + name + ' tem '+ age1 + ' anos.')
+    
+
+    //interpolando valores com tamplate literals ou template strings 
+    console.log(`A ${name} tem ${age1} anos.`)
+
+
+//objects
+
+    const person = {
+        name: "Andy",
+        age: 30,
+        weight: 88.6,
+        isAdim: true
+    }
+
+    console.log(person)
+
+    //para pegar apenas uma propriedade do objeto acima
+    console.log(person.name)
+
+    //para concatenar as propriedades
+    console.log(`${person.name} tem ${person.weight} Kg.`)
+
+
+//arrays
+
+    //usar colchetes para declarar, separar por virgulas
+    const animals = [
+        'Cat',
+        'Lion',
+        'Tiger',
+        'Jaguar',
+        'Puma',
+        'Panthera',
+
+        {
+            name: 'Leopard', //não é recomendado misturar strings e objetos e númenros no array para não haver confusões
+            age: 3
+        }
+    ]
+
+    console.log(animals)
+
+    //acessar valores dentro do array 
+    console.log(animals.length) //mostrará o indice
+
+    //indicar indice começando pelo zero
+    console.log(animals[2]) 
+    console.log(animals[8]) //undefined, não existe no indice
+    console.log(animals[6]) //ira apresentar um objeto 
+    console.log(animals[6].name) //é possivel acessar a propriedade do objeto
+    console.log(animals[5].name) //undefined, não existe a propriedade nesse indice
+    
+    //para concatenar
+    console.log(`The ${animals[0]} is a feline.`)
+    console.log(`The ${animals[6].name} is a feline too.`)
+
+</script>

@@ -1,0 +1,103 @@
+<!--
+    EXERCÍCIOS
+
+    1. Declare uma váriavel de nome weight
+
+    2. Que tipo de dado é a variável criada?
+
+    3. Declare uma variável e atribua valores para cada um dos dados:
+        * name: String
+        * age: Number (integer)
+        * star: Number (float)
+        * isSubscribed: Boolean
+
+    4. A variável student é de que tipo de dados?
+
+        4.1. Atribua a ela as mesmas propriedades e valores do exercício 3
+        4.2. Mostre no console a seguinte mensagem:
+
+        <name> de idade <age> pesa <weight> kg.
+            
+        ATENÇÃO: substitua <name> <age> e <weight> pelos valores de cada propriedade do objeto
+
+    5. Declare uma variável do tipo Array, de nome students e atribua a ela nenhum valor, ou seja, somente o Array vazio
+
+    6. Reatribua valor para a variável acima colocando dentro dela o objeto student da questão 4. (Não copiar e colar o objeto, mas usar o objeto criado e inseri ela no Array).
+
+    7. Coloque no console o valor da posição zero do Array acima
+
+    8. Crie um novo student e coloque na posição 1 do Arry students
+
+    9. Sem rodar o código responda qual é a resposta do código abaixo e porque? após sua resposta rode o código e veja se voce acertou.
+            console.log(a)
+            var a = 1
+
+-->
+
+<script>
+
+    //1
+    let weight 
+
+    //2
+    console.log(typeof weight)
+
+    //3
+    let name = "Cris"
+    let age = 36
+    let star = 4.9
+    let siSubscribed = true
+   
+    //4.1
+    let student = {
+        name: 'Anderson',
+        age: 30,
+        star: 4.9,
+        weight: 88.6,
+        isSubscribed: true
+    };
+
+    //4
+    console.log(typeof student)
+    console.log (student)
+
+    //4.2
+    console.log(`${student.name}, de idade ${student.age}, pesa ${student.weight}kg.`)
+
+    //5
+    let students = [
+      
+    ]
+    console.log(student)
+
+    //6
+    students = [
+        student
+    ]
+    console.log(students)
+
+    //7
+    console.log(students[0])
+
+    //8 
+    const bete = {
+        name: 'Bete',
+        age: 57,
+        star: 4.9,
+        weight: 55.9,
+        isSubscribed: true
+    }
+
+    /*students = [
+        student,
+        bete
+    ]*/
+    students[1] = bete
+    console.log(students)
+
+    //9 = undefined, devido o hoisiting ele reconhece que a existencia da variável 'a' porem não atribui o valor pois deveria estar acima 
+    console.log(a)
+    var a = 1
+
+
+</script>
