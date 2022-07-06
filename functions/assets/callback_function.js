@@ -6,7 +6,8 @@ function sayMyName(name) {
 //podemos passar qualquer tipo de dados, string, number, object e function
 sayMyName('Cris')
 sayMyName(9)
-sayMyName({name: 'Cris'})
+sayMyName({name: 'Cris'}) 
+
 sayMyName(
     () => {
         console.log('estou em uma callback')
