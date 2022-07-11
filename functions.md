@@ -295,7 +295,7 @@ sayMyName2()
 
 # FUNÇÕES CONSTRUTORAS
 
-São utilizadas para criar novos objetos e geralmente tem sua primeira letra maiúscula, todos com as mesmas características que são crias na função, usando a palavra chave _'this'_ para se referir ao objeto sendo criado.
+São utilizadas para criar novos objetos e geralmente tem sua primeira letra maiúscula, todos com as mesmas características que são criadas na função, usando a palavra chave _'this'_ para se referir ao objeto sendo criado.
 
 * Function() constructor
     * expressão new
