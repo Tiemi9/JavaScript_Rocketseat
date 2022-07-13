@@ -67,6 +67,11 @@ console.log(phraseWithUnderscore3.toUpperCase()) //caixa alta
 
 
 
+//Encontrando palvras , devido ser case sensitive, é necessario escrever exatamente como está.
+let phrases = "Eu quero viver"
+console.log(phrases.includes("amor"))
+
+
 //Criando array com construtor
 //criar array com construtor
 let myArrays = new Array('a', 'b', 'c')

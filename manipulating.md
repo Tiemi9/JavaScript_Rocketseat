@@ -120,7 +120,7 @@ console.log(phraseWithUnderscore3.toUpperCase()) //caixa alta
 
 ## Criando Array Com Construtor
 
-Para criar um array vom um método construtor, usa-se new Array(args), passando como argumento o tamanho deste vetor ou os valores, por exmplo: const array = new Array("a", "b", "c").
+Para criar um array com um método construtor, usa-se new Array(args), passando como argumento o tamanho deste vetor ou os valores, por exmplo: const array = new Array("a", "b", "c").
 
 ```js
 //criar array com construtor
@@ -130,6 +130,18 @@ console.log(myArrays)
 let myArrays2 = new Array(10)
 console.log(myArrays2)
 ```
+
+
+## Encontrando palavras em uma frase
+
+Para verificar se um texto possui uma palavra específica, podemos usar o método includes(), passando como argumento a palavra a ser encontrada. Teremos um resultado boleano, true para caso encontre e false caso não.
+Lembrando que esse é um método case sentive.
+
+```js
+let phrases = "Eu quero viver"
+console.log(phrases.includes("amo"))
+```
+
 
 
 ## Elementos do Array
